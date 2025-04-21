@@ -1599,3 +1599,228 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'role' cannot be null
 2025-04-21 15:28:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-04-21 15:28:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-04-21 15:28:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 15:56:25 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 20164 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 15:56:25 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 15:56:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 15:56:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2025-04-21 15:56:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 15:56:27 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 15:56:27 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 15:56:27 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 15:56:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 15:56:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2347 ms
+2025-04-21 15:56:29 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 15:56:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 15:56:29 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b3b2c34
+2025-04-21 15:56:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 15:56:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 15:56:31 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 15:56:32 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 15:56:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 15:56:32 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 7.512 seconds (process running for 8.399)
+2025-04-21 15:57:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 15:57:00 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 15:57:00 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:00:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:00:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:00:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:00:13 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 168 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:00:13 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:00:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:00:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2025-04-21 16:00:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:00:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:00:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:00:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:00:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:00:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
+2025-04-21 16:00:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:00:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:00:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77020328
+2025-04-21 16:00:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:00:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:00:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:00:17 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:00:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:00:17 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.639 seconds (process running for 5.441)
+2025-04-21 16:00:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:00:20 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:00:20 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:13:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:13:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:13:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:13:31 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 18912 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:13:31 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:13:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:13:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2025-04-21 16:13:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:13:32 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:13:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:13:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:13:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:13:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1748 ms
+2025-04-21 16:13:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:13:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:13:33 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b01897f
+2025-04-21 16:13:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:13:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:13:35 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:13:35 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:13:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:13:35 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 5.415 seconds (process running for 6.223)
+2025-04-21 16:13:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:13:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:13:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:16:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:16:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:16:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:16:18 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 24096 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:16:18 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:16:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:16:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-04-21 16:16:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:16:19 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:16:19 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:16:19 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:16:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:16:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+2025-04-21 16:16:19 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:16:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:16:20 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@305881b8
+2025-04-21 16:16:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:16:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:16:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:16:21 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:16:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:16:21 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.188 seconds (process running for 4.874)
+2025-04-21 16:16:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:16:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:16:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:18:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:18:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:18:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:18:44 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 10404 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:18:44 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:18:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:18:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-04-21 16:18:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:18:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:18:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:18:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:18:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:18:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1188 ms
+2025-04-21 16:18:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:18:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:18:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e4d4d22
+2025-04-21 16:18:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:18:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:18:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:18:48 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:18:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:18:48 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.181 seconds (process running for 4.748)
+2025-04-21 16:18:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:18:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:18:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:22:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:22:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:22:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:22:10 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 19980 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:22:10 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:22:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:22:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-04-21 16:22:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:22:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:22:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:22:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:22:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:22:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1302 ms
+2025-04-21 16:22:12 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:22:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:22:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@775c4054
+2025-04-21 16:22:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:22:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:22:14 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:22:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:22:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:22:14 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.575 seconds (process running for 5.317)
+2025-04-21 16:22:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:22:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:22:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:24:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:24:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:24:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:24:06 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 24740 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:24:06 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:24:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:24:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-04-21 16:24:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:24:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:24:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:24:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:24:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:24:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1398 ms
+2025-04-21 16:24:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:24:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:24:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45eacb70
+2025-04-21 16:24:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:24:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:24:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:24:10 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:24:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:24:10 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.723 seconds (process running for 5.533)
+2025-04-21 16:24:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:24:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:24:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 16:34:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:34:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:34:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:34:43 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 22520 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:34:43 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:34:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:34:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-04-21 16:34:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:34:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:34:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:34:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:34:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:34:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1162 ms
+2025-04-21 16:34:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:34:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:34:45 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@305881b8
+2025-04-21 16:34:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:34:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:34:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:34:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:34:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:34:46 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.0 seconds (process running for 4.689)
+2025-04-21 16:34:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:34:53 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:34:53 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-21 16:42:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:42:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 16:42:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-21 16:42:14 INFO  c.l.u.UserServiceApplication - Starting UserServiceApplication using Java 17.0.6 with PID 18472 (D:\LT_Web\SpringBoot\learning-project\user-service\target\classes started by A715-42G in D:\LT_Web\SpringBoot\learning-project)
+2025-04-21 16:42:14 INFO  c.l.u.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 16:42:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-21 16:42:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2025-04-21 16:42:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8013 (http)
+2025-04-21 16:42:15 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:42:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-21 16:42:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-21 16:42:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-21 16:42:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1159 ms
+2025-04-21 16:42:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-21 16:42:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-21 16:42:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@681311a7
+2025-04-21 16:42:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-21 16:42:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 16:42:17 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-21 16:42:17 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8013"]
+2025-04-21 16:42:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8013 (http) with context path '/'
+2025-04-21 16:42:17 INFO  c.l.u.UserServiceApplication - Started UserServiceApplication in 4.33 seconds (process running for 5.272)
+2025-04-21 16:42:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-21 16:42:20 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-21 16:42:20 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-21 17:06:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-21 17:06:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-21 17:06:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -58,8 +58,8 @@ public class UserController {
     public ApiResponse<UserDTO> getUserByUsername(@PathVariable String username){
         return ApiResponse.<UserDTO>builder()
                 .code(200)
+                .message("Thành công")
                 .result(userHandler.getUserByUsername(username))
-                .message("Thêm mới thành công User")
                 .build();
     }
 }

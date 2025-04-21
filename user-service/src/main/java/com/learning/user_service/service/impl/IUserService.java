@@ -62,6 +62,7 @@ public class IUserService implements UserService {
 
     @Override
     public UserDTO getUserByUsername(String username) {
+
         return userMapper.toDTO(userRepository.findByUsername(username));
     }
 
