@@ -6,13 +6,13 @@ import com.learning.core_service.entity.Post;
 import java.util.List;
 
 public interface PostService {
-    Post findPostById(Long id);
+    PostDTO findPostById(Long id);
 
-    Post createPost(Post post);
+    PostDTO createPost(PostDTO postDTO);
 
-    Post updatePost(Post post,Long id);
+    PostDTO updatePost(PostDTO postDTO,Long id);
 
-    List<Post> getPosts();
+    List<PostDTO> getPosts();
 
     void deletePost(Long id);
 }

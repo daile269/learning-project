@@ -11,8 +11,16 @@
 	<groupId>com.learing</groupId>
 	<artifactId>learning-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>learning-project</name>
 	<description>Auth-service</description>
+
+	<modules>
+		<module>auth-service</module>
+		<module>core-service</module>
+		<module>user-service</module>
+		<module>api-gateway</module>
+	</modules>
 	<url/>
 	<licenses>
 		<license/>
