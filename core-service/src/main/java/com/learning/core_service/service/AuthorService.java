@@ -1,17 +1,18 @@
 package com.learning.core_service.service;
 
+import com.learning.core_service.dto.AuthorDTO;
 import com.learning.core_service.entity.Author;
 
 import java.util.List;
 
 public interface AuthorService {
-    Author findAuthorById(Long id);
+    AuthorDTO findAuthorById(Long id);
 
-    Author createAuthor(Author author);
+    AuthorDTO createAuthor(AuthorDTO authorDTO);
 
-    Author updateAuthor(Author author,Long id);
+    AuthorDTO updateAuthor(AuthorDTO authorDTO,Long id);
 
-    List<Author> getAuthors();
+    List<AuthorDTO> getAuthors();
 
     void deleteAuthor(Long id);
     

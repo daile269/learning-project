@@ -31,25 +31,28 @@ public class IUserService implements UserService {
     }
 
     @Override
-    public UserDTO createUser(User user) {
+    public UserDTO createUser(UserDTO userDTO) {
+        User user = userMapper.toEntity(userDTO);
         checkUserExist(user);
+        System.out.println(user.getPassword());
         user.setPassword(encoder.encode(user.getPassword()));
         userRepository.save(user);
         return userMapper.toDTO(userRepository.save(user));
     }
 
     @Override
-    public UserDTO updateUser(User user, Long id) {
-        userRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.USER_IS_NOT_EXISTS));
+    public UserDTO updateUser(UserDTO userDTO, Long id) {
+        User user = userMapper.toEntity(userDTO);
+        User user1 = userRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.USER_IS_NOT_EXISTS));
         user.setId(id);
         user.setPassword(encoder.encode(user.getPassword()));
+        user.setEmail(user1.getEmail());
         return userMapper.toDTO(userRepository.save(user));
     }
 
     @Override
     public List<UserDTO> getUsers() {
-        List<User> userlist= userRepository.findAll();
-        return userlist.stream().map(user -> userMapper.toDTO(user)).collect(Collectors.toList());
+        return userRepository.findAll().stream().map(user -> userMapper.toDTO(user)).collect(Collectors.toList());
     }
 
     @Override
@@ -58,8 +61,8 @@ public class IUserService implements UserService {
     }
 
     @Override
-    public User getUserByUsername(String username) {
-        return userRepository.findByUsername(username);
+    public UserDTO getUserByUsername(String username) {
+        return userMapper.toDTO(userRepository.findByUsername(username));
     }
 
     private void checkUserExist(User user){

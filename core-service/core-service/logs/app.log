@@ -1,0 +1,200 @@
+2025-04-21 10:42:29 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 17496 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:42:29 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:42:31 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:42:31 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:42:31 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:42:31 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-04-21 10:42:31 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 2.32 seconds (process running for 5.538)
+2025-04-21 10:42:43 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 19212 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:42:43 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:42:44 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:42:44 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:42:44 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:42:44 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:42:45 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 1.814 seconds (process running for 4.137)
+2025-04-21 10:43:17 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 17332 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:43:17 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:43:18 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:43:18 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:43:18 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:43:18 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:43:18 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 1.83 seconds (process running for 4.06)
+2025-04-21 10:46:08 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 17856 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:46:08 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:46:09 WARN  o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'postController' defined in file [D:\LT_Web\SpringBoot\learning-project\core-service\target\classes\com\learning\core_service\controller\PostController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.learning.core_service.handler.PostHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-04-21 10:46:09 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-21 10:46:09 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.learning.core_service.controller.PostController required a bean of type 'com.learning.core_service.handler.PostHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.learning.core_service.handler.PostHandler' in your configuration.
+
+2025-04-21 10:46:09 WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.learning.core_service.controller.PostControllerTest@5a7b309b]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@6b8b5020 testClass = com.learning.core_service.controller.PostControllerTest, locations = [], classes = [com.learning.core_service.CoreServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@7d37ee0c key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@19932c16, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@305ffe9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@5b799640, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@3de8f619, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7bd7d6d6, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@1c1cef08, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@380b7987, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@1c9b0314, org.springframework.boot.test.context.SpringBootTestAnnotation@e8d28d0], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'postController' defined in file [D:\LT_Web\SpringBoot\learning-project\core-service\target\classes\com\learning\core_service\controller\PostController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.learning.core_service.handler.PostHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:145)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:564)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:145)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:116)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 72 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.learning.core_service.handler.PostHandler' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1894)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 96 common frames omitted
+2025-04-21 10:47:26 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 8656 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:47:26 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:47:27 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:47:27 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:47:27 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:47:27 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:47:27 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 2.133 seconds (process running for 4.597)
+2025-04-21 10:48:58 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 7780 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:48:58 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:49:00 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:49:00 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:49:00 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:49:00 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:49:00 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 2.217 seconds (process running for 4.407)
+2025-04-21 10:50:03 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 2792 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:50:03 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:50:05 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:50:05 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:50:05 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:50:05 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:50:05 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 2.952 seconds (process running for 4.133)
+2025-04-21 10:51:44 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 15596 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:51:44 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:51:47 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:51:47 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:51:47 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:51:47 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:51:47 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.073 seconds (process running for 4.273)
+2025-04-21 10:54:02 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 16660 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:54:02 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:54:05 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:54:05 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:54:05 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:54:05 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:54:05 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.017 seconds (process running for 4.317)
+2025-04-21 10:54:24 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 10516 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:54:24 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:54:27 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:54:27 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:54:27 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:54:27 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:54:27 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.153 seconds (process running for 4.614)
+2025-04-21 10:54:54 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 10604 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-21 10:54:54 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-21 10:54:57 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-21 10:54:57 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-21 10:54:57 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-21 10:54:57 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-21 10:54:57 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 2.775 seconds (process running for 3.949)

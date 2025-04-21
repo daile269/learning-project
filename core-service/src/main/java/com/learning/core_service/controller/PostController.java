@@ -1,7 +1,7 @@
 package com.learning.core_service.controller;
 
 import com.learning.core_service.dto.PostDTO;
-import com.learning.core_service.entity.Author;
+import com.learning.core_service.dto.response.ApiResponse;
 import com.learning.core_service.entity.Post;
 import com.learning.core_service.handler.PostHandler;
 import jakarta.validation.Valid;
@@ -9,8 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -21,24 +19,34 @@ public class PostController {
     private final PostHandler postHandler;
 
     @GetMapping
-    public ResponseEntity<List<Post>> getALlProducts(){
-        List<Post> postList = postHandler.getALlPosts();
+    public ResponseEntity<List<PostDTO>> getALlProducts(){
+        List<PostDTO> postList = postHandler.getALlPosts();
         return ResponseEntity.ok(postList);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Post> getPostById(@PathVariable Long id){
-        return ResponseEntity.ok(postHandler.getPostById(id));
+    public ApiResponse<PostDTO> getPostById(@PathVariable Long id){
+        return ApiResponse.<PostDTO>builder()
+                .code(200)
+                .result(postHandler.getPostById(id))
+                .message("Thông tin Post")
+                .build();
     }
     @PostMapping
-    public ResponseEntity<String> createPost(@Valid @RequestBody Post post){
-        postHandler.createPost(post);
-        return ResponseEntity.ok("Tạo thành công");
+    public ApiResponse<PostDTO> createPost(@Valid @RequestBody PostDTO postDTO){
+        return ApiResponse.<PostDTO>builder()
+                .code(200)
+                .result(postHandler.createPost(postDTO))
+                .message("Thêm thành công")
+                .build();
     }
     @PutMapping("/{id}")
-    public ResponseEntity<String> updatePost(@Valid @RequestBody Post post,@PathVariable Long id){
-        postHandler.updatePost(post,id);
-        return ResponseEntity.ok("Tạo thành công");
+    public ApiResponse<PostDTO> updatePost(@Valid @RequestBody PostDTO postDTO,@PathVariable Long id){
+        return ApiResponse.<PostDTO>builder()
+                .code(200)
+                .result(postHandler.updatePost(postDTO,id))
+                .message("Cập nhật thành công")
+                .build();
     }
 
     @DeleteMapping("/{id}")

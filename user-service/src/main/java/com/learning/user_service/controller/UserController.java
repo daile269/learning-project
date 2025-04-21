@@ -1,7 +1,8 @@
 package com.learning.user_service.controller;
 
 import com.learning.user_service.dto.UserDTO;
-import com.learning.user_service.entity.User;
+import com.learning.user_service.dto.response.ApiResponse;
+import com.learning.user_service.handler.UserHandler;
 import com.learning.user_service.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -15,24 +16,36 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
+    private final UserHandler userHandler;
 
     @PostMapping
-    public ResponseEntity<String> createUser(@Valid @RequestBody User user){
-        userService.createUser(user);
-        return ResponseEntity.ok("Thêm mới thành công");
+    public ApiResponse<UserDTO> createUser(@Valid @RequestBody UserDTO userDTO){
+        return ApiResponse.<UserDTO>builder()
+                .code(200)
+                .result(userHandler.createUser(userDTO))
+                .message("Thêm mới thành công User")
+                .build();
     }
     @PutMapping("/{id}")
-    public ResponseEntity<String> updateUser(@Valid @RequestBody User user, @PathVariable Long id){
-        return ResponseEntity.ok("Cập nhật thành công");
+    public ApiResponse<UserDTO> updateUser(@Valid @RequestBody UserDTO userDTO, @PathVariable Long id){
+        return ApiResponse.<UserDTO>builder()
+                .code(200)
+                .result(userHandler.updateUser(userDTO,id))
+                .message("Cập nhật thành công User")
+                .build();
     }
 
     @GetMapping
     public ResponseEntity<List<UserDTO>> getAllUsers(){
-        return ResponseEntity.ok(userService.getUsers());
+        return ResponseEntity.ok(userHandler.getALlUsers());
     }
     @GetMapping("/{id}")
-    public UserDTO getUserById(@PathVariable Long id) {
-        return userService.findUserById(id);
+    public ApiResponse<UserDTO> getUserById(@PathVariable Long id) {
+        return ApiResponse.<UserDTO>builder()
+                .code(200)
+                .result(userHandler.getUserById(id))
+                .message("Thông tin User")
+                .build();
     }
 
     @DeleteMapping("/{id}")
@@ -42,7 +55,11 @@ public class UserController {
     }
 
     @GetMapping("/username/{username}")
-    public ResponseEntity<User> getUserByUsername(@PathVariable String username){
-        return ResponseEntity.ok(userService.getUserByUsername(username));
+    public ApiResponse<UserDTO> getUserByUsername(@PathVariable String username){
+        return ApiResponse.<UserDTO>builder()
+                .code(200)
+                .result(userHandler.getUserByUsername(username))
+                .message("Thêm mới thành công User")
+                .build();
     }
 }
