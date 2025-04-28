@@ -3,18 +3,20 @@ package com.learning.core_service.handler;
 import com.learning.core_service.dto.AuthorDTO;
 import com.learning.core_service.exception.ResourceNotFoundException;
 import com.learning.core_service.service.AuthorService;
-import com.learning.core_service.service.impl.IAuthorService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-@RequiredArgsConstructor
 @Slf4j
+@RequiredArgsConstructor
 public class AuthorHandler {
-    private final IAuthorService authorService;
+    @DubboReference
+    private final AuthorService authorService;
+
 
     public List<AuthorDTO> getALlAuthors() {
         return authorService.getAuthors();

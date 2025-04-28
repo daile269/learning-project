@@ -2,7 +2,7 @@ package com.learning.user_service.handler;
 
 import com.learning.user_service.dto.UserDTO;
 import com.learning.user_service.exception.ResourceNotFoundException;
-import com.learning.user_service.service.impl.IUserService;
+import com.learning.user_service.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class UserHandler {
-    private final IUserService userService;
+    private final UserService userService;
 
     public List<UserDTO> getALlUsers() {
         return userService.getUsers();
@@ -40,5 +40,9 @@ public class UserHandler {
     }
     public UserDTO getUserByUsername(String username){
         return userService.getUserByUsername(username);
+    }
+
+    public void register(UserDTO userDTO){
+        userService.registerUser(userDTO);
     }
 }

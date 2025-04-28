@@ -4,6 +4,7 @@ import com.learing.auth_service.dto.request.LoginRequest;
 import com.learing.auth_service.dto.response.LoginResponse;
 import com.learing.auth_service.service.AuthService;
 import lombok.RequiredArgsConstructor;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AuthController {
 
+    @DubboReference
     private final AuthService authService;
 
     @PostMapping("/login")
@@ -20,6 +22,6 @@ public class AuthController {
 
     @GetMapping("/test")
     public String he(){
-        return "HEllo";
+        return "Authorization has role ADMIN";
     }
 }

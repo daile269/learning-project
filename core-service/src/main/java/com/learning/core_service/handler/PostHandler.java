@@ -1,21 +1,24 @@
 package com.learning.core_service.handler;
 
 import com.learning.core_service.dto.PostDTO;
-import com.learning.core_service.entity.Post;
 import com.learning.core_service.exception.ResourceNotFoundException;
 import com.learning.core_service.service.PostService;
-import com.learning.core_service.service.impl.IPostService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 @Component
 @RequiredArgsConstructor
 @Slf4j
 public class PostHandler {
-    private final IPostService postService;
+
+    @DubboReference
+    private final PostService postService;
 
     public List<PostDTO> getALlPosts() {
         return postService.getPosts();
@@ -39,7 +42,13 @@ public class PostHandler {
     public PostDTO updatePost(PostDTO postDTO, Long id) {
         return postService.updatePost(postDTO,id);
     }
+
     public void deletePost(Long id){
         postService.deletePost(id);
     }
+
+    public PostDTO updateImage(Long id, MultipartFile image) throws IOException {
+        return postService.updateImage(id,image);
+    }
+
 }

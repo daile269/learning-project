@@ -198,3 +198,52 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2025-04-21 10:54:57 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
 2025-04-21 10:54:57 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
 2025-04-21 10:54:57 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 2.775 seconds (process running for 3.949)
+2025-04-22 12:37:45 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 19696 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 12:37:45 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 12:37:47 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 12:37:47 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 12:37:47 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 12:37:47 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-04-22 12:37:47 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.025 seconds (process running for 5.844)
+2025-04-22 13:08:00 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 12208 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 13:08:00 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 13:08:03 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 13:08:03 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 13:08:03 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 13:08:03 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-04-22 13:08:03 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.932 seconds (process running for 5.516)
+2025-04-22 13:11:31 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 20668 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 13:11:31 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 13:11:34 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 13:11:34 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 13:11:34 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 13:11:34 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-22 13:11:34 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.737 seconds (process running for 5.109)
+2025-04-22 13:12:31 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 21084 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 13:12:31 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 13:12:34 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 13:12:34 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 13:12:34 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 13:12:34 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-04-22 13:12:34 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.72 seconds (process running for 5.122)
+2025-04-22 13:15:50 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 18616 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 13:15:50 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 13:15:53 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 13:15:53 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 13:15:53 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 13:15:53 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-04-22 13:15:54 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.932 seconds (process running for 6.167)
+2025-04-22 13:17:17 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 11484 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 13:17:17 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 13:17:20 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 13:17:20 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 13:17:20 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 13:17:20 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-04-22 13:17:20 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 3.778 seconds (process running for 5.229)
+2025-04-22 21:00:17 INFO  c.l.c.controller.PostControllerTest - Starting PostControllerTest using Java 17.0.6 with PID 4860 (started by A715-42G in D:\LT_Web\SpringBoot\learning-project\core-service)
+2025-04-22 21:00:17 INFO  c.l.c.controller.PostControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-04-22 21:00:21 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-04-22 21:00:22 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-04-22 21:00:22 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-04-22 21:00:22 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2025-04-22 21:00:22 INFO  c.l.c.controller.PostControllerTest - Started PostControllerTest in 5.321 seconds (process running for 7.181)

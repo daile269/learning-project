@@ -8,7 +8,7 @@ public enum ErrorCode {
     UNAUTHENTICATED(401, 401, "Unauthorized"),
     USER_IS_NOT_EXISTS(404,999,"User not exits"),
     FORBIDDEN(403, 403, "FORBIDDEN"),
-    VALIDLOGIN(444, 444,"Username or password valid" );
+    VALIDLOGIN(400, 444,"Username or password valid" );
 
 
     private final int httpStatus;

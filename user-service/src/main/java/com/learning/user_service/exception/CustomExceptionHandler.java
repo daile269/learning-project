@@ -1,5 +1,6 @@
 package com.learning.user_service.exception;
 
+import com.learning.user_service.dto.response.ApiResponse;
 import com.learning.user_service.response.ErrorResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
@@ -40,5 +41,15 @@ public class CustomExceptionHandler {
         });
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
+    @ExceptionHandler(value = AppException.class)
+    ResponseEntity<ApiResponse> handlingAppException(AppException exception) {
+        ErrorCode errorCode = exception.getErrorCode();
+        ApiResponse apiResponse = new ApiResponse();
 
+        apiResponse.setCode(errorCode.getCode());
+        apiResponse.setMessage(errorCode.getMessage());
+        System.out.println(apiResponse);
+
+        return ResponseEntity.badRequest().body(apiResponse);
+    }
 }

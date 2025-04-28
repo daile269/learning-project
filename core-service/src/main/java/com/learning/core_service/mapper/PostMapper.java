@@ -9,6 +9,7 @@ import org.mapstruct.Mapping;
 public interface PostMapper {
 
     @Mapping(target = "createTime", source = "createTime")
+    @Mapping(target = "imageUrl", source = "imageUrl")
     PostDTO toDTO(Post post);
 
     Post toEntity(PostDTO postDTO);

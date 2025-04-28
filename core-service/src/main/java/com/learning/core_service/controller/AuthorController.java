@@ -28,7 +28,7 @@ public class AuthorController {
         return ApiResponse.<AuthorDTO>builder()
                 .code(200)
                 .result(authorHandler.getAuthorById(id))
-                .message("Thông tin Author")
+                .message("Author Information")
                 .build();
     }
     @PostMapping
@@ -36,7 +36,7 @@ public class AuthorController {
         return ApiResponse.<AuthorDTO>builder()
                 .code(200)
                 .result(authorHandler.createAuthor(AuthorDTO))
-                .message("Thêm thành công")
+                .message("New Author added successfully")
                 .build();
     }
     @PutMapping("/{id}")
@@ -44,14 +44,14 @@ public class AuthorController {
         return ApiResponse.<AuthorDTO>builder()
                 .code(200)
                 .result(authorHandler.updateAuthor(AuthorDTO,id))
-                .message("Cập nhật thành công")
+                .message("Update success")
                 .build();
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteAuthor(@PathVariable Long id){
         authorHandler.deleteAuthor(id);
-        return ResponseEntity.ok("Xóa thành công");
+        return ResponseEntity.ok("Delete Success");
     }
 
 }

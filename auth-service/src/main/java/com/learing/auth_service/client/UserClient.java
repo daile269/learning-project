@@ -11,6 +11,7 @@ public class UserClient {
     private final WebClient webClient;
 
     public UserClient(WebClient.Builder builder) {
+        //this.webClient = builder.baseUrl("http://host.docker.internal:8013").build();
         this.webClient = builder.baseUrl("http://localhost:8013").build();
     }
 

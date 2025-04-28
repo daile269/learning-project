@@ -38,6 +38,8 @@ public class Post {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
 
+    private String imageUrl;
+
     @PrePersist
     public void prePersist(){
         if(this.createTime == null) this.createTime = LocalDateTime.now();
