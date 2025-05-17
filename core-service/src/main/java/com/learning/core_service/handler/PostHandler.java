@@ -1,6 +1,8 @@
 package com.learning.core_service.handler;
 
 import com.learning.core_service.dto.PostDTO;
+import com.learning.core_service.exception.AppException;
+import com.learning.core_service.exception.ErrorCode;
 import com.learning.core_service.exception.ResourceNotFoundException;
 import com.learning.core_service.service.PostService;
 import lombok.RequiredArgsConstructor;
@@ -30,7 +32,7 @@ public class PostHandler {
             return postService.findPostById(id);
         }catch (ResourceNotFoundException ex){
 
-            throw new ResourceNotFoundException("Post not found");
+            throw new AppException(ErrorCode.POST_NOT_FOUND);
         }
 
     }
@@ -47,8 +49,8 @@ public class PostHandler {
         postService.deletePost(id);
     }
 
-    public PostDTO updateImage(Long id, MultipartFile image) throws IOException {
-        return postService.updateImage(id,image);
+    public PostDTO updateImage(Long id, byte[] imageBytes, String originalFilename, String contentType) throws IOException {
+        return postService.updateImage(id,imageBytes,originalFilename,contentType);
     }
 
 }

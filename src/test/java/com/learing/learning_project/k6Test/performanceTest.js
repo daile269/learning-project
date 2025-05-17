@@ -3,52 +3,59 @@ import { check } from "k6";
 
 export let options = {
   vus: 10,
-  duration: "30s",
+  duration: "20s",
   ext: {
     loadimpact: {
       projectID: 1234567,
       name: "MyTest"
     },
     influxDB: {
-      url: 'http://localhost:8086',
+        url: 'http://localhost:8086',
       database: 'k6',
       tags: {
-        project: 'my-project'
+        project: 'user-service'
       },
     },
   },
 };
 
 export default function () {
-  let url = "http://localhost:8011/api/posts/1";
+  let url = "http://localhost:8013/api/users/1";
   let response = http.get(url);
 
   check(response, {
     "is status 200": (r) => r.status === 200,
     "response time is less than 500ms": (r) => r.timings.duration < 500,
   });
-  // let postResponse = http.post('http://localhost:8011/api/posts', JSON.stringify({
-  //   title: "New Post",
-  //   content: "This is a new post created for testing.",
-  //   authorId: 1,
+
+  let influxDbUrl = 'http://localhost:8086/write?db=k6';
+  let payload = `http_req_duration,project=user-service value=${response.timings.duration}`;
+
+
+  http.post(influxDbUrl, payload);
+
+  // let postResponse = http.post('http://localhost:8013/api/users', JSON.stringify({
+  //   username: "newuser",
+  //   password: "12345678",
   // }), { headers: { 'Content-Type': 'application/json' } });
   // check(postResponse, {
   //   'POST status is 200': (r) => r.status === 200,
   // });
   //
-  // // Kiểm tra PUT
-  // let putResponse = http.put('http://localhost:8011/api/posts/1', JSON.stringify({
-  //   title: "Updated Post",
-  //   content: "This post has been updated for testing.",
-  //   authorId: 1,
-  // }), { headers: { 'Content-Type': 'application/json' } });
-  // check(putResponse, {
-  //   'PUT status is 200': (r) => r.status === 200,
-  // });
 
-  // // Kiểm tra DELETE
-  // let deleteResponse = http.del('http://localhost:8011/api/posts/6992');
-  // check(deleteResponse, {
-  //   'DELETE status is 200': (r) => r.status === 200,
-  // });
+
+  // Kiểm tra DELETE
+  let deleteResponse = http.del('http://localhost:8013/api/users/5');
+  check(deleteResponse, {
+    'DELETE status is 200': (r) => r.status === 200,
+  });
+   // PUT
+  let putResponse = http.put('http://localhost:8013/api/users/4', JSON.stringify({
+    "username":"daile2s69",
+    "password":"daile2s69",
+    "email": "daile26ss92003@gmail.com"
+  }), { headers: { 'Content-Type': 'application/json' } });
+  check(putResponse, {
+    'PUT status is 200': (r) => r.status === 200,
+  });
 }

@@ -9,6 +9,7 @@ public class RequestLoggingFilterConfig {
 
     @Bean
     public CommonsRequestLoggingFilter loggingFilter(){
+
         CommonsRequestLoggingFilter filter = new CommonsRequestLoggingFilter();
         filter.setIncludeClientInfo(true);
         filter.setIncludeHeaders(true);

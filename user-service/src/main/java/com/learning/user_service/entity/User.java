@@ -24,17 +24,11 @@ public class User {
     private Long id;
 
     @Column(name = "username", updatable = false, length = 50)
-    @NotBlank(message = "Name cannot be blank")
-    @Size(min = 5, max = 100, message = "Name must be between 5 and 50 characters ")
     private String username;
 
     @Column(name = "password",nullable = false)
-    @NotBlank(message = "Password cannot be blank")
-    @Size(min = 5, max = 100, message = "Password must be between 5 and 50 characters ")
     private String password;
 
-    @Email(message = "Email không hợp lệ")
-    @NotBlank(message = "Email không được để trống")
     @Column(unique = true)
     private String email;
 
@@ -45,7 +39,7 @@ public class User {
     @PrePersist
     public void prePersist() {
         if (role == null) {
-            role = Role.ROLE_USER;
+            role = Role.USER;
         }
     }
 

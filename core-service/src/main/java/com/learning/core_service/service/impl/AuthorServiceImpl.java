@@ -10,15 +10,15 @@ import com.learning.core_service.repository.AuthorRepository;
 import com.learning.core_service.service.AuthorService;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.DubboService;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
+
 @RequiredArgsConstructor
 @DubboService
 public class AuthorServiceImpl implements AuthorService {
@@ -37,7 +37,11 @@ public class AuthorServiceImpl implements AuthorService {
     @CachePut(value = "author")
     public AuthorDTO createAuthor(AuthorDTO authorDTO) {
         Author author = authorMapper.toEntity(authorDTO);
-        authorRepository.save(author);
+        if (authorRepository.existsByEmail(author.getEmail())) {
+            throw new AppException(ErrorCode.EMAIL_IS_EXISTS);
+        } else {
+            authorRepository.save(author);
+        }
         return authorMapper.toDTO(author);
     }
 

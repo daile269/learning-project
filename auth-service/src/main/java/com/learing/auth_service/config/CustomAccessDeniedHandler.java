@@ -16,7 +16,7 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
 
-        ErrorCode errorCode = ErrorCode.UNAUTHENTICATED; // Bạn cần định nghĩa mã lỗi này trong enum ErrorCode
+        ErrorCode errorCode = ErrorCode.FORBIDDEN;
         response.setStatus(403);
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 

@@ -10,6 +10,12 @@ public interface PostMapper {
 
     @Mapping(target = "createTime", source = "createTime")
     @Mapping(target = "imageUrl", source = "imageUrl")
+    @Mapping(target = "status", source = "status")
+    @Mapping(target = "id", source = "id")
+    @Mapping(target = "createdAt", source = "createdAt")
+    @Mapping(target = "updatedAt", source = "updatedAt")
+    @Mapping(target = "createdBy", source = "createdBy")
+    @Mapping(target = "updatedBy", source = "updatedBy")
     PostDTO toDTO(Post post);
 
     Post toEntity(PostDTO postDTO);

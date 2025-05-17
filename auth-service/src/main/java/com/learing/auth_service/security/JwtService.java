@@ -2,6 +2,9 @@ package com.learing.auth_service.security;
 
 import com.learing.auth_service.client.UserClient;
 import com.learing.auth_service.dto.UserDTO;
+import com.learing.auth_service.dto.request.LogoutRequest;
+import com.learing.auth_service.entity.InvalidatedToken;
+import com.learing.auth_service.repository.InvalidatedTokenRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
@@ -27,6 +30,7 @@ public class JwtService {
 
     private final UserClient userClient;
 
+    private final InvalidatedTokenRepository invalidatedTokenRepository;
     public String generateToken(String username) {
 
         UserDTO user = userClient.getUserByUsername(username);
@@ -39,6 +43,15 @@ public class JwtService {
                 .expiration(Date.from(Instant.now().plus(30, ChronoUnit.MINUTES)))
                 .add("role","ROLE_"+user.getRole())
                 .and()
+                .signWith(getKey())
+                .compact();
+    }
+
+    public String generateRefreshToken(String username) {
+        return Jwts.builder()
+                .subject(username)
+                .issuedAt(new Date())
+                .expiration(Date.from(Instant.now().plus(1, ChronoUnit.DAYS)))
                 .signWith(getKey())
                 .compact();
     }
@@ -65,14 +78,20 @@ public class JwtService {
 
     public boolean validateToken(String token, UserDetails userDetails) {
         final String username = extractUsername(token);
-        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token) );
+        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token)&& !isTokenInvalidated(token) );
     }
 
-    private boolean isTokenExpired(String token) {
+    public boolean isTokenExpired(String token) {
         return extractExpiration(token).before(new Date());
     }
 
-    private Date extractExpiration(String token) {
+    public Date extractExpiration(String token) {
         return extractClaim(token, Claims::getExpiration);
     }
+
+    public boolean isTokenInvalidated(String token){
+        return invalidatedTokenRepository.findByToken(token)!=null;
+    }
+
+
 }

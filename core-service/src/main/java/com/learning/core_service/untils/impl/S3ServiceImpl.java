@@ -24,15 +24,15 @@ public class S3ServiceImpl implements S3Service {
     private final S3Client s3Client;
 
     @Override
-    public String uploadFile(MultipartFile file) throws IOException {
-        String fileName = UUID.randomUUID() + "_" + file.getOriginalFilename();
+    public String uploadFile(byte[] bytes, String originalFilename,String contentType) throws IOException {
+        String fileName = UUID.randomUUID() + "_" + originalFilename;
         PutObjectRequest putObjectRequest = PutObjectRequest.builder()
                 .bucket(bucketName)
                 .key(fileName)
-                .contentType(file.getContentType())
+                .contentType(contentType)
                 .build();
         s3Client.putObject(putObjectRequest,
-                RequestBody.fromBytes(file.getBytes()));
+                RequestBody.fromBytes(bytes));
         return "https://" + bucketName + ".s3.amazonaws.com/" + fileName;
     }
 }

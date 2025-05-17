@@ -17,5 +17,5 @@ public interface PostService {
 
     void deletePost(Long id);
 
-    PostDTO updateImage(Long id, MultipartFile image) throws IOException;
+    PostDTO updateImage(Long id, byte[] imageBytes, String originalFilename, String contentType) throws IOException;
 }

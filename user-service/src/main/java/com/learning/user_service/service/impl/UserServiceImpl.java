@@ -11,6 +11,7 @@ import com.learning.user_service.producer.UserRegistrationPublisher;
 import com.learning.user_service.repository.UserRepository;
 import com.learning.user_service.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -46,6 +47,7 @@ public class UserServiceImpl implements UserService {
         user.setId(id);
         user.setPassword(encoder.encode(user.getPassword()));
         user.setEmail(user1.getEmail());
+        user.setRole(user1.getRole());
         return userMapper.toDTO(userRepository.save(user));
     }
 
@@ -75,6 +77,8 @@ public class UserServiceImpl implements UserService {
     private void checkUserExist(User user){
         User checkUser = userRepository.findByUsername(user.getUsername());
         if(checkUser!=null) throw new AppException(ErrorCode.USER_IS_EXISTS);
+        if (userRepository.existsByEmail(user.getEmail()))
+            throw new AppException(ErrorCode.EMAIL_IS_EXISTS);
     }
     private User saveUser(UserDTO userDTO){
         User user = userMapper.toEntity(userDTO);

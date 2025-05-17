@@ -15,14 +15,11 @@
     import io.micrometer.core.instrument.Counter;
     import io.micrometer.core.instrument.MeterRegistry;
     import io.micrometer.core.instrument.Timer;
-    import lombok.RequiredArgsConstructor;
-    import org.apache.dubbo.config.annotation.DubboReference;
     import org.apache.dubbo.config.annotation.DubboService;
     import org.springframework.cache.annotation.CacheEvict;
     import org.springframework.cache.annotation.CachePut;
     import org.springframework.cache.annotation.Cacheable;
     import org.springframework.stereotype.Service;
-    import org.springframework.web.multipart.MultipartFile;
 
     import java.io.IOException;
     import java.util.List;
@@ -56,19 +53,16 @@
             this.meterRegistry = meterRegistry;
 
             this.createCounter = meterRegistry.counter("post.create.count");
-            this.deleteCounter = Counter.builder("post.delete.count")
-                    .description("Number of posts deleted")
-                    .register(meterRegistry);
-            ;
+            this.deleteCounter = meterRegistry.counter("post.delete.count");
+
+
         }
-    //    @DubboReference
-    //    private final AuthService authService;
 
         @Override
         @Cacheable(value = "post",key = "#id")
         public PostDTO findPostById(Long id) {
             Post post = postRepository.findById(id).orElseThrow(() ->
-                    new ResourceNotFoundException("Post is not exits"));
+                    new ResourceNotFoundException("Post does not exits"));
             return postMapper.toDTO(post);
         }
 
@@ -77,7 +71,7 @@
         public PostDTO createPost(PostDTO postDTO) {
             Post post =postMapper.toEntity(postDTO);
             Author author =authorRepository.findById(postDTO.getAuthorId()).orElseThrow(() ->
-                    new ResourceNotFoundException("Author is not exits"));
+                    new ResourceNotFoundException("Author does not exits"));
             post.setAuthor(author);
             postRepository.save(post);
             createCounter.increment();
@@ -91,10 +85,11 @@
             post.setId(id);
             Post post1 = postRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.POST_NOT_FOUND));
             Author author =authorRepository.findById(postDTO.getAuthorId()).orElseThrow(() ->
-                    new ResourceNotFoundException("Author is not exits"));
+                    new ResourceNotFoundException("Author does not exits"));
             post.setAuthor(author);
             post.setCreateTime(post1.getCreateTime());
             post.setImageUrl(post1.getImageUrl());
+            post.setStatus(post1.getStatus());
             postRepository.save(post);
             return postMapper.toDTO(post);
         }
@@ -109,20 +104,19 @@
         @CacheEvict(value = "post",key = "#id")
         public void deletePost(Long id) {
             deleteCounter.increment();
+            postRepository.findById(id)
+                    .orElseThrow(() -> new AppException(ErrorCode.POST_NOT_FOUND));
+
             Timer.builder("post.delete.timer")
                     .description("Time taken to delete a post")
                     .register(meterRegistry)
-                    .record(() -> {
-                        postRepository.findById(id)
-                                .orElseThrow(() -> new AppException(ErrorCode.POST_NOT_FOUND));
-                        postRepository.deleteById(id);
-                    });
+                    .record(() -> postRepository.deleteById(id));
         }
 
         @Override
-        public PostDTO updateImage(Long id, MultipartFile image) throws IOException {
+        public PostDTO updateImage(Long id, byte[] imageBytes, String originalFilename, String contentType) throws IOException {
             Post post = postRepository.findById(id).orElseThrow(() -> new AppException(ErrorCode.POST_NOT_FOUND));
-            String imageUrl = s3Service.uploadFile(image);
+            String imageUrl = s3Service.uploadFile(imageBytes,originalFilename,contentType);
             post.setImageUrl(imageUrl);
             postRepository.save(post);
             return postMapper.toDTO(post);
